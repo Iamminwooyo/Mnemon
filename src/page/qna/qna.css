@@ -1,0 +1,112 @@
+  /* 콘텐츠 박스 */
+  .qnacontent-box {
+    /* background-color: #FFFDD0; */
+    background-color: #FFF4F4  ;
+    border: 2px solid #808080;
+    border-top: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+    flex-grow: 1;
+    margin: 0 20px; /* 콘텐츠 박스와 바깥 영역 간 여백 추가 */
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 콘텐츠 영역 그림자 */
+    overflow: hidden; /* 스크롤 제거 */
+  }
+  /* order.css */
+.qna-header {
+    width: 100%;
+    padding: 15px 0;
+    gap: 10px;
+    border-bottom: 2px solid #808080;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    position: sticky; /* 스크롤 시 고정 */
+    top: 0; /* 상단에 고정 위치 설정 */
+    z-index: 100; /* 다른 요소 위에 위치하도록 설정 */
+  }
+
+  .qna-button {
+    font-family: 'DOSSaemmul', sans-serif;
+    background-color: #68D9E8;
+    border-radius: 10px;
+    border: solid 2px #808080;
+    padding: 5px 20px;
+    margin-top: 5px;
+    margin-right: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .qna-table {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    font-family: 'DOSSaemmul', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .qnagrid-wrapper {
+    position: relative;
+    height: 708px;
+    background-color: #ffffff;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    margin: 20px; /* 상하 20px 여백 */
+    max-width: 100%; /* 최대 폭을 부모 컨테이너에 맞춤 */
+    overflow-y: auto; /* 세로 스크롤 허용 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+  }
+  
+  /* grid-container 내부의 스크롤바 */
+  .qnagrid-wrapper::-webkit-scrollbar {
+    width: 1px; /* 세로 스크롤 너비 */
+    height: 10px; /* 가로 스크롤 높이 */
+  }
+
+  .qnagrid-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 최소 200px, 아이템 개수에 따라 열 생성 */
+    gap: 20px; /* 아이템 간 간격 */
+    justify-content: start; /* 그리드 전체 왼쪽 정렬 */
+    align-items: start; /* 세로 정렬 */
+  }
+  
+  /* grid-container 내부의 스크롤바 */
+  .grid-wrapper::-webkit-scrollbar {
+    width: 1px; /* 세로 스크롤 너비 */
+    height: 10px; /* 가로 스크롤 높이 */
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    max-width: 200px;
+    max-height: 300px;
+    width: 100%; /* 사진이 grid-item 크기에 맞게 조정 */
+    height: auto; /* 비율 유지 */
+    border: 2px solid #c0c0c0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .no-results {
+    width: 100%;
+    text-align: center;
+    font-family: 'DOSSaemmul', sans-serif;
+    font-size: 20px;
+    color: #808080;
+    margin-top: 50px;
+  }
+  
+  
+  .color-tab-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 25px;
+  }

@@ -1,0 +1,499 @@
+.deletecustom-modal .ant-modal {
+  padding: 0 !important; /* 모달의 전체 외부 패딩 제거 */
+}
+
+.deletecustom-modal .ant-modal-content {
+  padding: 0 !important; /* 모달 내용의 외부 패딩 제거 */
+  background-color: #ffffff;
+  border: solid 2px #808080;
+  border-radius: 12px;
+}
+
+.deletecustom-modal .ant-modal-footer {
+  padding: 15px !important; /* 모달 내용의 외부 패딩 제거 */
+}
+
+/* Footer 내부 버튼 스타일 */
+.deletecustom-modal .ant-modal-footer .ant-btn {
+  background-color: #ffffff; /* 버튼 기본 배경색 */
+  color: #333; /* 버튼 텍스트 색상 */
+  border: solid 2px #808080; /* 버튼 테두리 제거 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  padding: 8px 16px; /* 버튼 내부 여백 */
+  font-weight: bold; /* 버튼 텍스트 굵게 */
+}
+
+.deletecustom-modal .ant-modal-footer .ant-btn:hover {
+  background-color: #cac9c9; /* 버튼 hover 색상 */
+  color: white;
+}
+
+.deletecustom-modal .ant-modal-footer .ant-btn:first-child {
+  background-color: #ffffff; /* Cancel 버튼 색상 */
+}
+
+.deletecustom-modal .ant-modal-footer .ant-btn:first-child:hover {
+  background-color: #cac9c9; /* Cancel 버튼 hover 색상 */
+  color: white;
+  border: solid 2px #808080;
+}
+
+.deleteheader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 2px #808080;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #002fff;
+  border-top-left-radius: 10px ;
+  border-top-right-radius: 10px ;
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.deletemodalbtn {
+  background-color: #d32f2f;
+  color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  margin-left: 5px;
+  padding: 3px 8px;
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.deletefooter-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin: 15px 20px;
+  margin-top: 20px;
+}
+
+.deletecancel-button,
+.deleteok-button {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  padding: 2px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.deletecancel-button:hover,
+.deleteok-button:hover {
+  background-color: #cac9c9;
+  color: #ffffff;
+}
+
+.deletemodal {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* 원하는 내부 여백 */
+  margin-right: 20px;
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buycustom-modal {
+  padding: 0 !important; /* 모달의 전체 외부 패딩 제거 */
+  width: 700px !important;
+  
+}
+
+.buycustom-modal .ant-modal-content {
+  padding: 0 !important; /* 모달 내용의 외부 패딩 제거 */
+  width: 704px !important;
+  background-color: #ffffff;
+  border: solid 2px #808080;
+  border-radius: 12px;
+}
+
+.buycustom-modal .ant-modal-footer {
+  padding: 15px !important; /* 모달 내용의 외부 패딩 제거 */
+}
+
+/* Footer 내부 버튼 스타일 */
+.buycustom-modal .ant-modal-footer .ant-btn {
+  background-color: #ffffff; /* 버튼 기본 배경색 */
+  color: #333; /* 버튼 텍스트 색상 */
+  border: solid 2px #808080; /* 버튼 테두리 제거 */
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+  padding: 8px 16px; /* 버튼 내부 여백 */
+  font-weight: bold; /* 버튼 텍스트 굵게 */
+  justify-content: space-between;
+}
+
+.buycustom-modal .ant-modal-footer .ant-btn:hover {
+  background-color: #cac9c9; /* 버튼 hover 색상 */
+  color: white;
+}
+
+.buycustom-modal .ant-modal-footer .ant-btn:first-child {
+  background-color: #ffffff; /* Cancel 버튼 색상 */
+}
+
+.buycustom-modal .ant-modal-footer .ant-btn:first-child:hover {
+  background-color: #cac9c9; /* Cancel 버튼 hover 색상 */
+  color: white;
+  border: solid 2px #808080;
+}
+
+.buymodal-img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.buymodal-name {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.buymodal-price {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.buymodal-color {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buymodal-size {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buymodal-quantity {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.buymodal {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  margin-top: 40px; /* 원하는 내부 여백 */
+  margin-left: 50px;
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buycustom-modal-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* 좌우 정렬 */
+  align-items: center; /* 수직 정렬 */
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 12px 12px;
+}
+
+.total-amount {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 55px;
+  text-align: end;
+  color: #333;
+}
+
+.buyfooter-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin: 5px 20px;
+  margin-top: 10px;
+}
+
+.cancel-button,
+.ok-button {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333;
+  border: 2px solid #808080;
+  border-radius: 5px;
+  padding: 4px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-button:hover,
+.ok-button:hover {
+  background-color: #cac9c9;
+  color: #ffffff;
+}
+
+.ordermodal-name {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ordermodal-price {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.ordermodal-size {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+.ordermodal-quantity {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.ordermodal-inform {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.ordermodal-inform2 {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.ordermodal-footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* 좌우 정렬 */
+  align-items: center; /* 수직 정렬 */
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 0 0 12px 12px;
+}
+
+/* 화살표 공통 스타일 */
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  background-color: transparent; /* 화살표 배경 투명 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px; /* 화살표 크기 */
+  font-weight: bold !important; /* 화살표 두께 */
+  font-family: 'DOSSaemmul', sans-serif !important;
+  color: #000 !important; /* 화살표 색상 */
+  border: 2px solid #000; /* 화살표 테두리 */
+  border-radius: 50%; /* 둥근 화살표 */
+  cursor: pointer;
+}
+
+/* 화살표 hover 스타일 */
+.slick-prev:hover,
+.slick-next:hover {
+  color: #fff; /* hover 시 글자 색상 */
+  border-color: #333; /* hover 시 테두리 색상 */
+}
+
+/* 왼쪽 화살표 위치 */
+.slick-prev {
+  left: -60px;
+}
+
+/* 오른쪽 화살표 위치 */
+.slick-next {
+  right: -60px;
+}
+
+/* 화살표 아이콘 스타일 (두께와 폰트 변경) */
+.slick-prev:before,
+.slick-next:before {
+  /* content: "<"; */
+  font-size: 25px !important;/* 화살표 크기 */
+  font-weight: 900 !important; /* 화살표 두께 */
+  font-family: 'DOSSaemmul', sans-serif !important;
+  color: inherit; /* 상위 색상 상속 */
+}
+
+/* 공통 스타일 */
+.ant-form-item-label > label {
+  font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  font-size: 14px; /* 폰트 크기 */
+  font-weight: bold;
+  color: #333; /* 텍스트 색상 */
+}
+
+/* Form의 필수 항목 별표 제거 */
+.ant-form-item-required::before {
+  content: none !important; /* 별표 숨기기 */
+}
+
+/* Input 스타일 */
+.ant-input {
+  border: 1px solid #808080 !important; /* 테두리 스타일 */
+  border-radius: 6px !important; /* 모서리 둥글게 */
+  font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  font-size: 14px !important; /* 글자 크기 */
+  padding: 8px !important; /* 내부 여백 */
+}
+
+.ant-input-password {
+  border: 1px solid #808080 !important; /* 테두리 스타일 */
+}
+
+.ant-input:focus {
+  border-color: #555 !important; /* 포커스 시 테두리 색상 */
+  box-shadow: none !important; /* 포커스 시 그림자 제거 */
+}
+
+/* TextArea 스타일 */
+.ant-input-textarea {
+  border: 2px solid #808080 !important; /* 테두리 스타일 */
+  border-radius: 6px !important; /* 모서리 둥글게 */
+  font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  font-size: 14px !important; /* 글자 크기 */
+}
+
+.ant-input-textarea:focus {
+  border-color: #555 !important; /* 포커스 시 테두리 색상 */
+  box-shadow: none !important; /* 포커스 시 그림자 제거 */
+}
+
+/* Select 스타일 */
+.ant-select-selector {
+  border-radius: 6px !important; /* 모서리 둥글게 */
+  font-family: 'DOSSaemmul', sans-serif !important; /* 폰트 스타일 */
+  font-size: 14px !important; /* 글자 크기 */
+  padding: 6px 12px !important; /* 내부 여백 */
+}
+/* Select 선택된 값 스타일 */
+.ant-select-selection-item {
+  font-family: 'DOSSaemmul', sans-serif !important; /* 커스텀 폰트 */
+  font-size: 14px !important; /* 글자 크기 */
+  color: #333 !important; /* 텍스트 색상 */
+  font-weight: bold !important; /* 텍스트 굵기 */
+}
+
+.ant-select-selector:focus,
+.ant-select-selector:hover {
+  border-color: #555 !important; /* 포커스 및 hover 시 테두리 색상 */
+  font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+}
+
+/* Checkbox 스타일 */
+.ant-checkbox-wrapper {
+  font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  font-size: 14px; /* 글자 크기 */
+  font-weight: bold;
+  color: #333; /* 텍스트 색상 */
+}
+
+.ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #555 !important; /* 포커스 시 테두리 색상 */
+}
+
+/* 비밀번호 입력창 안쪽 보더 제거 */
+.ant-input-password {
+  border: 2px solid #808080 !important; /* 기본 테두리 */
+  border-radius: 6px !important; /* 외곽 테두리만 둥글게 */
+  box-shadow: none !important; /* 그림자 제거 */
+}
+
+.ant-input-password input {
+  border: none !important; /* 안쪽 보더 제거 */
+  box-shadow: none !important; /* 내부 그림자 제거 */
+  background: transparent !important; /* 배경 투명 처리 */
+}
+
+.ant-input-password:focus {
+  border-color: #555 !important; /* 포커스 시 테두리 색상 */
+  box-shadow: none !important; /* 포커스 시 그림자 제거 */
+}
+
+.qnafooter-buttons {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin: 15px 20px;
+  margin-top: 20px;
+}
+
+
+.detailmodal-img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 20px;
+  flex: 1;
+}
+
+.detailmodal-name {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 25px;
+}
+
+.detailmodal-price {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.detailmodal-color {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.detailmodal-size {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detailmodal-quantity {
+  font-family: 'DOSSaemmul', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 30px;
+}

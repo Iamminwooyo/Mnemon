@@ -1,0 +1,88 @@
+/* RangePicker 컨테이너 스타일 */
+.ant-picker {
+    background-color: #ffffff  !important; /* 배경색 */
+    border: 2px solid #808080; /* 테두리 */
+    border-radius: 10px; /* 모서리 둥글게 */
+    height: 50px; /* 높이 설정 */
+    padding: 12px; /* 내부 여백 */
+    font-family: 'DOSSaemmul', sans-serif; /* 사용자 폰트 */
+    font-size: 18px; /* 글자 크기 */
+    color: #333; /* 텍스트 색상 */
+    text-align: center;
+    transition: none !important; /* 애니메이션 제거 */
+    width: 300px;
+    margin-top: 10px;
+}
+
+/* RangePicker hover 상태 */
+.ant-picker:hover {
+    background-color: #ffffff  !important; /* 배경색 */
+    border-color: #808080 !important; /* hover 시 테두리 색상 고정 */
+    transition: none !important; /* hover 애니메이션 제거 */
+}
+
+/* RangePicker 포커스 상태 */
+.ant-picker-focused {
+    background-color: #ffffff  !important; /* 배경색 */
+    border-color: #808080 !important; /* 포커스된 테두리 색상 고정 */
+    box-shadow: none !important; /* 포커스된 그림자 제거 */
+    transition: none !important; /* 포커스 애니메이션 제거 */
+}
+
+/* RangePicker 입력 필드 스타일 */
+.ant-picker-input {
+    color: #333; /* 텍스트 색상 */
+    background-color: #ffffff  !important; /* 배경색 */
+}
+
+.ant-picker-input input::placeholder {
+    font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+    font-size: 15px; /* 폰트 크기 */
+    font-weight: bold;
+    color: #333 !important; /* 텍스트 색상 */
+    opacity: 0.6; /* 투명도 (브라우저 기본값 제거) */
+}
+
+/* 입력 필드 내부 텍스트 중앙 정렬 */
+.ant-picker-input > input {
+    text-align: center; /* 텍스트 중앙 정렬 */
+    padding: 0 !important; /* 여백 제거 */
+    margin: 0 !important; /* 여백 제거 */
+}
+
+/* RangePicker 드롭다운 스타일 */
+.ant-picker-dropdown {
+    background-color: #fff; /* 드롭다운 배경색 */
+    border: 2px solid #808080; /* 드롭다운 테두리 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: none !important; /* 드롭다운 그림자 제거 */
+    transition: none !important; /* 애니메이션 제거 */
+}
+
+/* RangePicker 드롭다운 셀 hover 상태 */
+.ant-picker-cell-inner:hover {
+    background-color: transparent !important; /* hover 시 배경색 제거 */
+    color: inherit !important; /* hover 시 텍스트 색상 유지 */
+    transition: none !important; /* hover 애니메이션 제거 */
+}
+
+/* RangePicker 선택된 날짜 스타일 */
+.ant-picker-cell-selected .ant-picker-cell-inner {
+    background-color: #555 !important; /* 선택된 배경색 */
+    color: #fff !important; /* 선택된 텍스트 색상 */
+    font-weight: bold; /* 텍스트 굵게 */
+    text-align: center;
+    transition: none !important; /* 애니메이션 제거 */
+}
+
+/* Start/End 포커스 밑의 파란색 바 제거 */
+.ant-picker-range .ant-picker-active-bar {
+    display: none !important; /* 활성 상태 바 숨김 */
+}
+
+/* 입력 필드와 RangePicker 바 전체 초기화 */
+.ant-picker-active-bar {
+    background: none !important; /* 기본 파란색 바 제거 */
+    height: 0 !important; /* 높이 제거 */
+    transition: none !important; /* 애니메이션 제거 */
+}

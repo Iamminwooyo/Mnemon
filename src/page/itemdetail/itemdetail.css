@@ -1,0 +1,11 @@
+.background {
+    background-color: #d78be6;
+    background-image: 
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 가로 격자 */
+      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* 세로 격자 */
+    background-size: 40px 40px; /* 격자 크기 */
+    display: flex;
+    flex-direction: column; /* 세로로 레이아웃 */
+    min-height: 100vh; /* 화면 전체 높이 보장 */
+    background-repeat: repeat;
+  }

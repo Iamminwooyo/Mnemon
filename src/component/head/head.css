@@ -1,0 +1,98 @@
+/* head.css 파일 */
+.head {
+  display: flex; /* 수평 배치 */
+  justify-content: space-between; /* 양쪽 끝으로 배치 */
+  align-items: center; /* 수직 가운데 정렬 */
+  width: 100%; /* 부모 요소의 전체 너비를 차지 */
+}
+
+.head-img {
+  flex: 1; /* 전체 비율에서 1 */
+  height: 100px;
+  max-width: 200px;
+  margin-left: 20px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.head-layout {
+  flex: 5; /* 전체 비율에서 5 */
+  display: flex;
+  flex-direction: column; /* 세로 방향 정렬 */
+  justify-content: center; /* 세로 가운데 정렬 */
+  padding-left: 20px; /* 내부 여백 추가 */
+  margin-bottom: 20px;
+}
+
+.logo {
+  font-size: 5rem; /* 글씨 크기 */
+  font-weight: bold; /* 글씨 두껍게 */
+  color: #FFEE58; /* 원하는 색상 */
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  letter-spacing: 0.2em;
+  margin-left: 455px;
+  cursor: pointer; /* 클릭 가능한 커서 표시 */
+  display: inline-block; /* 텍스트 크기만큼의 영역으로 제한 */
+}
+
+.login { 
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem; /* 로그인 텍스트 크기 */
+  margin-right: 30px; /* 오른쪽 끝에서 왼쪽으로 간격 조정 */
+  margin-top: 40px;
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  color:#B2F5EA;
+  margin-bottom: 10px;
+}
+
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  background-color: #F8E5D1; /* 연한 흰색 배경 */
+  border: 2px solid #808080; /* 연보라색 테두리 */
+  padding: 0px 20px;
+  border-radius: 50px; /* 둥근 모서리 */
+  text-align: center; /* 중앙 정렬 */
+  width: 80%; /* 전체 너비 중 80%만 차지 */
+  margin-left: 100px;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  max-width: 1000px; /* 최대 너비 제한 */
+}
+
+
+.top-section2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  color:#F8E5D1;
+  padding: 0px 20px;
+  text-align: center; /* 중앙 정렬 */
+  width: 80%; /* 전체 너비 중 80%만 차지 */
+  margin: 20px auto; /* 수직 가운데 정렬 및 양쪽 여백 */
+  padding-bottom: 40px;
+  padding-top: 20px;
+  max-width: 1000px; /* 최대 너비 제한 */
+}
+
+.top-section3 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  color:#000000;
+  padding: 0px 20px;
+  text-align: center; /* 중앙 정렬 */
+  width: 80%; /* 전체 너비 중 80%만 차지 */
+  margin: 20px auto; /* 수직 가운데 정렬 및 양쪽 여백 */
+  padding-bottom: 40px;
+  padding-top: 20px;
+  max-width: 1000px; /* 최대 너비 제한 */
+}

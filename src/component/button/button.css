@@ -1,0 +1,21 @@
+.color-picker {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 한 줄에 5개씩 */
+    gap: 5px; /* 버튼 간 간격 */
+    margin: 10px 20px; /* 상하좌우 여백 */
+}
+  
+  .color-button {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #808080;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .color-button:hover {
+    transform: scale(1.1);
+  }
+  

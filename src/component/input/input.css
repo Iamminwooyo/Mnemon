@@ -1,0 +1,88 @@
+.custom-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-input {
+    text-align: center !important;
+    border-top: 2px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
+    border-left: 1px solid #808080 !important;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px !important;
+    font-family: 'DOSSaemmul', sans-serif !important; /* 폰트 스타일 */
+    font-size: 18px;
+  }
+
+  .custom-input::placeholder {
+    font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+    color: #808080; /* 텍스트 색상 */
+    font-size: 18px; /* 폰트 크기 */
+  }
+
+  .cartcustom-input {
+    text-align: center !important;
+    border-top: 2px solid #808080 !important;
+    border-bottom: 2px solid #808080 !important;
+    border-left: 1px solid #808080 !important;
+    border-radius: 0px !important;
+    border-right: 3px solid #808080 !important;
+    height: 35px;
+    width: 60px !important;
+    font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+    font-size: 18px;
+  }
+  
+  .custom-input:focus {
+    text-align: center;
+    border: 2px solid #808080 !important;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px;
+    outline: none !important; /* 포커스 시 외곽선 제거 */
+    box-shadow: none !important; /* 포커스 시 그림자 제거 */
+  }
+
+  .custom-input:hover {
+    text-align: center;
+    border: 2px solid #808080 !important;
+    border-radius: 5px;
+    height: 35px;
+    width: 60px;
+    outline: none !important; /* 포커스 시 외곽선 제거 */
+    box-shadow: none !important; /* 포커스 시 그림자 제거 */
+  }
+
+  .custom-input-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #808080 !important;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  }
+
+  .cartcustom-input-plus-btn {
+    background-color: #f0f0f0;
+    border: 2px solid #808080 !important;
+    border-left: none !important;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    font-weight: bold;
+    font-family: 'DOSSaemmul', sans-serif; /* 폰트 스타일 */
+  }
+  
+  .custom-input-btn:hover {
+    background-color: #cac9c9;
+    border-color: #555555 !important;
+    color:#000000 !important;
+  }
+  
+  .cartcustom-input-plus-btn:hover {
+    background-color: #cac9c9;
+    border-color: #555555 !important;
+    color:#000000 !important;
+  }

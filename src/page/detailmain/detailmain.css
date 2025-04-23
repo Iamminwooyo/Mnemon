@@ -1,0 +1,593 @@
+.detailmain {
+    /* background-color: #F1B3F2; */
+    background-color: #b3f2d5;
+    flex: 5.5;
+    border: 2px solid #808080;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* 전체 박스 그림자 */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px; /* 외부 여백 추가 */
+    border-radius: 15px;
+    height:900px;
+  }
+  
+  /* 윈도우 헤더 */
+  .detailretro-header {
+    /* background-color: #ec78ee; */
+    background-color: #88eebe;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 2px solid #808080;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    flex-shrink: 0;
+    z-index: 10;
+    margin-bottom: 5px; /* 헤더와 탭 영역 간 여백 */
+  }
+
+  .minimize {
+    border-radius: 5px;
+    border: 2px solid #808080;
+    padding: 3px 8px;
+    font-family: 'DOSSaemmul', sans-serif;
+  }
+
+  .close {
+    border-radius: 5px;
+    border: 2px solid #808080;
+    margin-left: 5px;
+    padding: 3px 8px;
+    font-family: 'DOSSaemmul', sans-serif;
+  }
+  
+  .detailfont {
+    text-align: center;
+    flex: 1;
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'DOSSaemmul', sans-serif;
+  }
+
+  .detailcontent-box {
+    /* background-color: #FFFDD0; */
+    background-color: #FFF4F4  ;
+    border: 2px solid #808080;
+    border-radius: 15px;
+    padding: 10px;
+    flex-grow: 1;
+    margin: 0 20px; /* 콘텐츠 박스와 바깥 영역 간 여백 추가 */
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 콘텐츠 영역 그림자 */
+    overflow: hidden; /* 스크롤 제거 */
+  }
+
+  .button-tab-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .detailcontent-background {
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: 2px solid #808080;
+    margin: 10px 20px;
+    overflow-y: scroll; /* 스크롤 유지 */
+    position: relative; /* 부모 컨텍스트 설정 */
+    height: 650px;
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 상단 정렬 */
+    align-items: center; /* 버튼 가운데 정렬 */
+    padding: 10px;
+  }
+  
+  .back-button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    margin-left: 25px;
+    font-family: 'DOSSaemmul', sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+  .wish-button {
+    background-color: #801ef1;
+    color: #fff;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    margin-right: 5px;
+    font-family: 'DOSSaemmul', sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+  .buy-button {
+    background-color: #68D9E8;
+    color: #fff;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    margin-right: 25px;
+    font-family: 'DOSSaemmul', sans-serif;
+    letter-spacing: 0.1em;
+  }
+  
+  .back-button:hover {
+    background-color: #c7c7c7;
+  }
+
+  .buy-button:hover {
+    background-color: #30cce0;
+  }
+
+  .wish-button:hover {
+    background-color: #7100f3;
+  }
+  
+  .detail-icon {
+    width: 40px !important; /* 크기를 강제 설정 */
+    height: 40px !important;
+    transition: transform 0.2s ease; /* 클릭 시 애니메이션 */
+    margin-right: 5px;
+  }
+  
+  .detail-icon:hover {
+    transform: scale(1.1); /* 호버 시 확대 */
+  }
+  
+  .detailphoto-section {
+    display: flex;
+    position: relative;
+    margin: 20px 40px;
+  }
+  
+  
+  .detailphoto-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .detailinform {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 20px;
+    width: 500px;
+  }
+
+  .detailname {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'DOSSaemmul', sans-serif;
+    margin-bottom: 8px;
+  }
+
+  .detailprice {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'DOSSaemmul', sans-serif;
+    margin-bottom: 25px;
+  }
+
+  .detailcolor {
+      width: "50px";
+      height: "50px";
+      border: "1px solid #000";
+      border-Radius: "5px";
+  }
+
+  .detailname-size {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'DOSSaemmul', sans-serif;
+    margin-right: 5px;
+  }
+
+  .detailintroduce {
+    font-family: 'DOSSaemmul', sans-serif;
+    color: #333;
+    white-space: pre-line; /* 줄바꿈과 공백을 유지 */
+  }
+
+  .detailname-table {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+  }
+  
+  .detailname-other {
+    display: flex;
+    font-size: 20px; /* 폰트 크기 */
+    font-weight: bold; /* 기본 폰트 굵기 */
+    font-family: 'DOSSaemmul', sans-serif;
+    margin-right: 5px;
+  }
+
+
+  .detailcontent-background::-webkit-scrollbar {
+    width: 1px; /* 세로 스크롤 너비 */
+    height: 10px; /* 가로 스크롤 높이 */
+  }
+  
+  .detailvalue {
+    font-family: 'DOSSaemmul', sans-serif;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .material-detail-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .material-detail-key {
+    font-weight: bold;
+    margin-right: 10px; /* Key와 Value 사이 간격 */
+    font-family: 'DOSSaemmul', sans-serif;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .detailhorizontal-line {
+    margin: 50px 0;
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .detailmnemon-logo {
+    font-size: 2rem;
+    font-family: "DOSSaemmul", sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .detailadditional-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detailadditional-image {
+    width: 60%;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .detailimage-container {
+    position: sticky; /* 고정 위치 */
+    top: 30px; /* 부모의 상단에서 고정 위치 */
+    margin-left: 40px;
+    z-index: 10; /* 다른 요소보다 위에 표시 */
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .layer-image {
+    position: absolute; /* 이미지 겹치기 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease; /* 부드러운 페이드 전환 */
+  }
+  
+  .layer-0 {
+    z-index: 4;
+  }
+  
+  .layer-1 {
+    z-index: 3;
+  }
+  
+  .layer-2 {
+    z-index: 2;
+  }
+  
+  .layer-3 {
+    z-index: 1;
+  }
+
+  .detailreview-container {
+    margin-top: 50px;
+    padding: 20px 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detailreview-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-family: 'DOSSaemmul', sans-serif;
+    width: 1090px;
+  }
+  
+  .detail-photoreviewrbox{
+    position: absolute;
+    bottom: 1px; /* 하단 여백 */
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* 왼쪽과 오른쪽 정렬 */
+    padding: 0 5px; /* 좌우 여백 추가 */
+  }
+
+/* Carousel 외부 래퍼 */
+.photo-review-carousel-wrapper {
+  max-width: 1155px; /* 전체 너비 제한 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+/* Carousel 내 아이템 리스트 */
+.detailreview-photo-list {
+  display: flex;
+  justify-content: center; /* 아이템 중앙 정렬 */
+  margin-bottom: 30px;
+}
+
+.slick-slide {
+  width: 250px;
+}
+
+/* 개별 아이템 */
+.detailreview-photo-item {
+  width: 200px; /* 아이템 너비 */
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #808080;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  gap: 10px; /* 아이템 간 간격 */
+}
+
+.detailreview-photo-list-least {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/* 개별 아이템 */
+.detailreview-photo-item-least {
+  width: 200px; /* 아이템 너비 */
+  text-align: center;
+  background-color: #fff;
+  border: 2px solid #808080;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 30px;
+}
+
+/* 이미지 스타일 */
+.detailreview-photo-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+  
+
+  .detailreview-photo-info {
+    font-size: 14px;
+    font-family: 'DOSSaemmul', sans-serif;
+    color: #555;
+    margin-top: 10px;
+    height: 120px;
+    position: relative;
+  }
+
+  .detailreview-photo-stars {
+    margin-left: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .detailreview-photo-comment {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    text-align: left;
+    margin-left: 5px;
+    
+  }
+  
+  .detailreview-photo-date {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .detailreview-text-list {
+    margin-top: 20px;
+    width: 1090px;
+  }
+  
+  .detailreview-text-item {
+    background-color: #fff;
+    border: 2px solid #808080;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailreview-text-comment {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'DOSSaemmul', sans-serif;
+    text-align: left;
+    margin-left: 5px;
+  }
+  
+  .detailreview-text-date {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .detailreview-text-stars {
+    margin-left: 5px;
+    margin-bottom: 15px;
+    font-family: 'DOSSaemmul', sans-serif;
+  }
+
+  .detail-textreviewrbox{
+    position: relative;
+    bottom: 1px; /* 하단 여백 */
+    display: flex;
+    width: 98%;
+    justify-content: space-between; /* 왼쪽과 오른쪽 정렬 */
+    padding: 10px 5px; /* 좌우 여백 추가 */
+  }
+
+  
+.detail-reviewr {
+  position: absolute;
+  bottom: 1px; /* 하단 여백 */
+  left: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #555;
+  font-family: 'DOSSaemmul', sans-serif;
+}
+
+.detail-reviewrdate {
+  position: absolute;
+  bottom: 1px; /* 하단 여백 */
+  right: 1px;
+  font-size: 14px;
+  color: #999;
+  font-family: 'DOSSaemmul', sans-serif;
+}
+
+/* 기본 별점 스타일 */
+.star-icon {
+  display: inline-block;
+}
+
+/* 포토 리뷰: 큰 별 */
+.large-stars .star-icon {
+  width: 20px; /* 큰 사이즈 */
+  height: 20px;
+}
+
+/* 일반 리뷰: 작은 별 */
+.small-stars .star-icon {
+  width: 15px; /* 작은 사이즈 */
+  height: 15px;
+}
+
+/* 기본 별점 컨테이너 정렬 */
+.stars-container {
+  display: flex;
+  align-items: center;
+}
+
+.star-rating-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* 포토 리뷰의 큰 숫자 */
+.large-stars .star-rating-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 5px;
+}
+
+/* 일반 리뷰의 작은 숫자 */
+.small-stars .star-rating-value {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 15px;
+}
+
+.pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.pagination-item:hover {
+  color: #d78be6;
+}
+
+.pagination-item.active {
+  color: #7B1FA2;
+}
+
+.detailreview-no-reviews {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  font-family: 'DOSSaemmul', sans-serif;
+  height: 270px;
+  margin-top: 30px;
+}
+
+.detailreview-no-photoreviews {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999;
+  font-family: 'DOSSaemmul', sans-serif;
+  height: 270px;
+  margin-top: 30px;
+}

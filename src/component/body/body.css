@@ -1,0 +1,6 @@
+.content {
+    display: flex;
+    gap: 20px; /* 사이드바와 메인 간격 */
+    flex: 1;
+    padding: 0 100px; /* 양쪽 여백 */
+  }

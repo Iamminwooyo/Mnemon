@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+@font-face {
+  font-family: 'DOSSaemmul';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSSaemmul.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.background {
+  background-color: #d78be6; /* 사진의 기본 배경색상에 가까운 색 */
+  background-image: 
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 가로 격자 */
+    linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* 세로 격자 */
+  background-size: 40px 40px; /* 격자 크기 조정 */
+  width: 100%; /* 화면 전체 너비 */
+}
+
+.logo {
+  font-size: 5rem; /* 글씨 크기 */
+  font-weight: bold; /* 글씨 두껍게 */
+  color: #EEE851; /* 원하는 색상 */
+  text-align: center; /* 가운데 정렬 */
+  font-family: 'DOSSaemmul', sans-serif; /* 글씨체 설정 */
+  letter-spacing: 0.2em;
+  margin-top: 20px; /* 상단 여백 */
+}
+.open-modal-btn {
+  background: #ffeaa7;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.open-modal-btn:hover {
+  background: #ffcf56;
+}

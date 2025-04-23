@@ -1,0 +1,216 @@
+/* 배경 */
+.graybackground {
+  background-color: #b4b4b4; /* 배경색 */
+  background-image: 
+      linear-gradient(0deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px), /* 가로 격자 */
+      linear-gradient(90deg, rgba(0, 0, 0, 0.2) 1px, transparent 1px); /* 세로 격자 */
+  background-size: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-repeat: repeat;
+}
+
+.background-intro {
+  padding: 400px 400px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+
+/* 로그인 영역 */
+.login-background {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 2px solid #808080;
+  height: 900px;
+  margin: 10px 10%;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+  display: flex;
+  border-bottom: 2px solid #808080;
+  width: 100%;
+  padding: 5px;
+  justify-content: end;
+  background-color: #666666;
+}
+/* 비디오 배경 */
+.login-video {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* 자식 요소를 절대 위치로 설정 가능 */
+  background-color: #666666;
+}
+
+.login-img {
+  object-fit: cover;
+}
+
+.video-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 비디오 오버레이 */
+.video-overlay {
+  position: absolute;
+  top: 35px; /* 화면 중앙 정렬 */
+  left: 120px;
+  transform: translate(-50%, -50%); /* 중앙 정렬 보정 */
+  color: #FFF;
+  text-align: center;
+}
+
+.overlay-text {
+  font-size: 4rem; /* 텍스트 크기 */
+  font-family: 'DOSSaemmul', sans-serif; /* 레트로 폰트 */
+  color: #EEE851;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 */
+}
+
+/* 로그인 폼 */
+.login-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+}
+
+.login-title {
+  font-size: 4.5rem;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  padding: 0px 20px;
+  /* color: #97f0c6; */
+  color: #8400ff;
+  font-family: 'DOSSaemmul', sans-serif;
+}
+
+.login-form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0px 20px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+
+.input-field::placeholder {
+  font-size: 16px;
+  font-family: 'DOSSaemmul', sans-serif;
+  opacity: 0.3;
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #c76ff0;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #b642ec;
+}
+
+.login-links {
+  margin-top: 50px; /* 위 버튼과의 간격 */
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* 아이디 찾기와 비밀번호 찾기 사이 간격 */
+}
+
+.link {
+  color: #000000; /* 텍스트 색상 */
+  text-decoration: underline; /* 밑줄 표시 */
+  font-size: 16px; /* 글자 크기 */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #8400ff; /* 호버 시 텍스트 색상 */
+  text-decoration: none; /* 호버 시 밑줄 제거 */
+}
+
+/* 비디오 오버레이 버튼 */
+.hover-button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'DOSSaemmul', sans-serif; /* 레트로 폰트 */
+  color: #EEE851;
+  background-color: rgba(0, 0, 0, 0.0);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.hover-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: #8400ff;
+  border-color: black;
+}
+
+.hover-button.active {
+  background-color: rgba(255, 255, 255, 1);
+  color: #8400ff;
+}
+
+/* Login 버튼 위치 */
+.login-hover {
+  display: flex;
+  top: 230%;
+  left: 415%;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Join 버튼 위치 */
+.join-hover {
+  display: flex;
+  top: 380%;
+  left: 415%;
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .login-tab {
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #808080;
+}
+
+.join-tab {
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #808080;
+} */

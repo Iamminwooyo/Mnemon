@@ -1,0 +1,36 @@
+.foot {
+    background-color: #000000;
+    color: #EEE851;
+    font-family: 'DOSSaemmul', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 20px;
+    text-align: start;
+    padding: 40px 0px;
+    padding-left: 30px;
+}
+
+.foot2 {
+    display: flex;
+    background-color: #8f49ad;
+    color: #EEE851;
+    font-family: 'DOSSaemmul', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 20px;
+    text-align: start;
+    padding: 30px 0px;
+    padding-left: 30px;
+}
+
+.footer3 {
+    flex: 1;
+}
+
+.vertical {
+    flex: 0.1;
+    border-right: solid 1px #EEE851;
+    margin-right: 100px;
+    margin-left: -300px;
+    opacity: 0.5;
+}
