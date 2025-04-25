@@ -1,20 +1,20 @@
 import './App.css';
-import BACKGROUND from './js/component/background/background';
+import BACKGROUND from './component/background/background';
 // import AllPage from './js/page/all/';
-import OuterPage from './js/page/outer/outer';
-import TopPage from './js/page/top/top';
-import BottomPage from './js/page/bottom/bottom';
-import AccPage from './js/page/acc/acc';
-import LoginPage from './js/page/login/login';
-import JoinPage from './js/page/join/join';
-import ItemDetails from "./js/page/itemdetail/itemdetail";
-import CartPage from "./js/page/cart/cart";
-import WishlistPage from "./js/page/wish/wish";
-import OrderPage from "./js/page/order/order";
-import NoticePage from "./js/page/notice/notice";
-import QnAPage from "./js/page/qna/qna";
-import EventPage from "./js/page/event/event";
-import ReviewPage from "./js/page/review/review";
+import OuterPage from './page/outer/outer';
+import TopPage from './page/top/top';
+import BottomPage from './page/bottom/bottom';
+import AccPage from './page/acc/acc';
+import LoginPage from './page/login/login';
+import JoinPage from './page/join/join';
+import ItemDetails from "./page/itemdetail/itemdetail";
+import CartPage from "./page/cart/cart";
+import WishlistPage from "./page/wish/wish";
+import OrderPage from "./page/order/order";
+import NoticePage from "./page/notice/notice";
+import QnAPage from "./page/qna/qna";
+import EventPage from "./page/event/event";
+import ReviewPage from "./page/review/review";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // React Router 임포트
 
 function App() {
